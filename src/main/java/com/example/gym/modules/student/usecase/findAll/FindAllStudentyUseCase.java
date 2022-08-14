@@ -1,4 +1,4 @@
-package com.example.gym.modules.student.usecase.create.findAll;
+package com.example.gym.modules.student.usecase.findAll;
 
 import com.example.gym.modules.student.StudentyRepository;
 import com.example.gym.modules.student.entities.StudentEntity;

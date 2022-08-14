@@ -1,4 +1,4 @@
-package com.example.gym.modules.student.usecase.create.findAll;
+package com.example.gym.modules.student.usecase.findAll;
 
 import com.example.gym.modules.student.entities.StudentEntity;
 import io.swagger.annotations.Api;

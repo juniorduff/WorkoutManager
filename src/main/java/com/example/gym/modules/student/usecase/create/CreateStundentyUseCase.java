@@ -10,19 +10,25 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 @Service
-public class CreateUserUseCase implements createUserUseCaseImplementation {
+public class CreateStundentyUseCase implements createUserUseCaseImplementation {
 
-    private static final ModelMapper modelMapper = new ModelMapper();
+    private final ModelMapper modelMapper = new ModelMapper();
       @Autowired
     private StudentyRepository userRepository;
+    private StudentEntity  newStudent;
+
     public StudentEntity execute(StudentEntityDto studentDto) {
         return null;
     }
 
     @Override
     public StudentEntity excute(StudentEntityDto studentDto) {
-        StudentEntity student = modelMapper.map(studentDto, StudentEntity.class);
-        return userRepository.save(student);
+        StudentEntity newStudent = new StudentEntity();
+        newStudent.setName(studentDto.getName()) ;
+        newStudent.setPhone(studentDto.getPhone());
+        newStudent.setEmail(studentDto.getEmail());
+
+        return userRepository.save(newStudent);
     }
 }
 

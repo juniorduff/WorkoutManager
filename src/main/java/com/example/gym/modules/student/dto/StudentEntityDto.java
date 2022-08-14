@@ -1,2 +1,14 @@
-package com.example.gym.modules.student.dto;public class StudentEntityDto {
+package com.example.gym.modules.student.dto;
+
+import lombok.Data;
+
+import java.io.Serializable;
+import java.util.UUID;
+
+@Data
+public class StudentEntityDto implements Serializable {
+    private final UUID id;
+    private final String name;
+    private final String email;
+    private final String phone;
 }
