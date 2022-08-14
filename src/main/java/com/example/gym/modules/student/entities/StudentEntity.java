@@ -1,6 +1,5 @@
 package com.example.gym.modules.student.entities;
 
-import com.example.gym.modules.student.dto.StudentEntityDto;
 import com.example.gym.modules.workout.entity.WorkoutEntity;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;

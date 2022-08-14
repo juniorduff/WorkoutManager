@@ -1,6 +1,6 @@
 package com.example.gym.modules.student.usecase.create;
 
-import com.example.gym.modules.student.dto.StudentEntityDto;
+import com.example.gym.modules.student.dto.StudentDto;
 import com.example.gym.modules.student.entities.StudentEntity;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +17,8 @@ public class CreateStudentyController {
     @Autowired
   private CreateStundentyUseCase createUserUseCase;
 
-    @PostMapping("/create")
-    public StudentEntity handle(@RequestBody StudentEntityDto studentEntity) {
-      return  this.createUserUseCase.excute(studentEntity);
-    }
+  @PostMapping("/create")
+  public StudentEntity handle(@RequestBody StudentDto studentEntity) {
+    return this.createUserUseCase.excute(studentEntity);
+  }
 }

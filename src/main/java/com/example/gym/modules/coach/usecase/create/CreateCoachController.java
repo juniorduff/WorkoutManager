@@ -1,6 +1,6 @@
 package com.example.gym.modules.coach.usecase.create;
 
-import com.example.gym.modules.coach.dto.CoachEntityDto;
+import com.example.gym.modules.coach.dto.CoachDto;
 import com.example.gym.modules.coach.entities.CoachEntity;
 import com.example.gym.modules.coach.usecase.create.implemetation.CreateCoachUseCaseImpl;
 import io.swagger.annotations.Api;
@@ -18,7 +18,7 @@ public class CreateCoachController {
     private CreateCoachUseCaseImpl createCoachUseCase;
 
     @PostMapping("/create")
-    public CoachEntity handle(@RequestBody CoachEntityDto coachDto) {
+    public CoachEntity handle(@RequestBody CoachDto coachDto) {
         return this.createCoachUseCase.execute(coachDto);
     }
 }

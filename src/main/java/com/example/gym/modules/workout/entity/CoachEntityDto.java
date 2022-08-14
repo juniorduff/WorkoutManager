@@ -1,4 +1,4 @@
-package com.example.gym.modules.coach.dto;
+package com.example.gym.modules.workout.entity;
 
 import lombok.Data;
 
