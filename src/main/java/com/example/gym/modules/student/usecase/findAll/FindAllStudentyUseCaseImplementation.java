@@ -1,6 +1,6 @@
 package com.example.gym.modules.student.usecase.findAll;
 
-import com.example.gym.modules.student.entities.StudentEntity;
+import com.example.gym.modules.student.entity.StudentEntity;
 
 import java.util.List;
 

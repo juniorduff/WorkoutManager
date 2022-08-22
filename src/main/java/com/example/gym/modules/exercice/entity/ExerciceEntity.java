@@ -1,6 +1,6 @@
 package com.example.gym.modules.exercice.entity;
 
-import com.example.gym.modules.workout.entity.WorkoutEntity;
+import com.example.gym.modules.exercice.Category;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -20,10 +20,11 @@ public class ExerciceEntity {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name ="description")
+    @Column(name = "description")
     private String description;
 
-
+    @Enumerated(EnumType.STRING)
+    private Category category;
 
     @Column(name = "created_at")
     @CreationTimestamp
@@ -32,8 +33,5 @@ public class ExerciceEntity {
     @UpdateTimestamp
     private LocalDateTime updated_at;
 
-    @ManyToOne()
-    @JoinColumn(name = "workout_id", nullable = false)
-    private WorkoutEntity workout;
 
 }

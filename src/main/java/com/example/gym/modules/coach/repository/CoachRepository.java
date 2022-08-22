@@ -1,4 +1,4 @@
-package com.example.gym.modules.coach;
+package com.example.gym.modules.coach.repository;
 
 import com.example.gym.modules.coach.entities.CoachEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,4 +1,4 @@
-package com.example.gym.modules.exercice;
+package com.example.gym.modules.exercice.repository;
 
 import com.example.gym.modules.exercice.entity.ExerciceEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -17,7 +17,7 @@ public class WorkoutDto implements Serializable {
     private final LocalDateTime created_at;
     private final LocalDateTime updated_at;
     private final UUID coachID;
-    private final List<UUID> ExercicesIDs;
+    private final List<UUID> exercicesIDs;
     private final UUID studentID;
 
 }

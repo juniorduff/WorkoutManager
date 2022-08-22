@@ -1,7 +1,7 @@
 package com.example.gym.modules.workout.usecase.findAllByStudent;
 
-import com.example.gym.modules.workout.WorkoutRepository;
 import com.example.gym.modules.workout.entity.WorkoutEntity;
+import com.example.gym.modules.workout.repository.WorkoutRepository;
 import com.example.gym.modules.workout.usecase.findAllByStudent.implementation.FindAllWorkoutUseCaseImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

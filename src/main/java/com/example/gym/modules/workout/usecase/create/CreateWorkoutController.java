@@ -22,6 +22,7 @@ public class CreateWorkoutController {
 
     @PostMapping("/create")
     public ResponseEntity<WorkoutEntity> handle(@RequestBody WorkoutDto workoutDto) {
+        System.out.println(workoutDto);
         return this.createWorkoutUseCase.execute(workoutDto);
     }
 }

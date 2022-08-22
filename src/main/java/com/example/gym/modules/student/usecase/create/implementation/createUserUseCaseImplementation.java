@@ -1,7 +1,7 @@
 package com.example.gym.modules.student.usecase.create.implementation;
 
 import com.example.gym.modules.student.dto.StudentDto;
-import com.example.gym.modules.student.entities.StudentEntity;
+import com.example.gym.modules.student.entity.StudentEntity;
 
 public interface createUserUseCaseImplementation {
     /**

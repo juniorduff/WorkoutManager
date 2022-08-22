@@ -1,4 +1,4 @@
-package com.example.gym.modules.student.entities;
+package com.example.gym.modules.student.entity;
 
 import com.example.gym.modules.workout.entity.WorkoutEntity;
 import lombok.Data;

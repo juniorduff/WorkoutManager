@@ -1,6 +1,6 @@
 package com.example.gym.modules.workout.usecase.delete;
 
-import com.example.gym.modules.workout.WorkoutRepository;
+import com.example.gym.modules.workout.repository.WorkoutRepository;
 import com.example.gym.modules.workout.usecase.delete.implementation.DeleteWorkoutUseCaseImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,9 +1,10 @@
 package com.example.gym.modules.exercice.usecase.create;
 
-import com.example.gym.modules.exercice.ExerciceRepository;
 import com.example.gym.modules.exercice.dto.ExerciceDto;
 import com.example.gym.modules.exercice.entity.ExerciceEntity;
-import com.example.gym.modules.exercice.usecase.implementation.CreateExercicesUseCaseImpl;
+import com.example.gym.modules.exercice.repository.ExerciceRepository;
+import com.example.gym.modules.exercice.usecase.create.implementation.CreateExercicesUseCaseImpl;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,10 +15,8 @@ public class CreateExercicesUseCase implements CreateExercicesUseCaseImpl {
     private ExerciceRepository exerciceRepository;
 
     public ExerciceEntity execute(ExerciceDto exerciceDto) {
-
-        ExerciceEntity newExercice = new ExerciceEntity();
-        newExercice.setName(exerciceDto.getName());
-        newExercice.setDescription(exerciceDto.getDescription());
+        ModelMapper modelMapper = new ModelMapper();
+        ExerciceEntity newExercice = modelMapper.map(exerciceDto, ExerciceEntity.class);
 
         return this.exerciceRepository.save(newExercice);
     }

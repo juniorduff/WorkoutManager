@@ -1,8 +1,8 @@
 package com.example.gym.modules.coach.usecase.create;
 
-import com.example.gym.modules.coach.CoachRepository;
 import com.example.gym.modules.coach.dto.CoachDto;
 import com.example.gym.modules.coach.entities.CoachEntity;
+import com.example.gym.modules.coach.repository.CoachRepository;
 import com.example.gym.modules.coach.usecase.create.implemetation.CreateCoachUseCaseImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

@@ -1,10 +1,10 @@
 package com.example.gym.modules.workout.usecase.update;
 
-import com.example.gym.modules.exercice.ExerciceRepository;
 import com.example.gym.modules.exercice.entity.ExerciceEntity;
-import com.example.gym.modules.workout.WorkoutRepository;
+import com.example.gym.modules.exercice.repository.ExerciceRepository;
 import com.example.gym.modules.workout.dto.WorkoutDto;
 import com.example.gym.modules.workout.entity.WorkoutEntity;
+import com.example.gym.modules.workout.repository.WorkoutRepository;
 import com.example.gym.modules.workout.usecase.update.implementation.UpdateWorkoutUseCaseImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

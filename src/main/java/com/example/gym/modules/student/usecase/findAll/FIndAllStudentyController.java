@@ -1,6 +1,6 @@
 package com.example.gym.modules.student.usecase.findAll;
 
-import com.example.gym.modules.student.entities.StudentEntity;
+import com.example.gym.modules.student.entity.StudentEntity;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user")
-@Api(tags = "user")
+@RequestMapping("/student")
+@Api(tags = "student")
 public class FIndAllStudentyController {
 
     @Autowired
