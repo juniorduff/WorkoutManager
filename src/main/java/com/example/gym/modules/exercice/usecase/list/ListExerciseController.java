@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/exercice")
-@Api(tags = "exercise")
+@Api(tags = "Exercice")
 public class ListExerciseController {
     @Autowired
     private ListExerciseUseCaseImp listExerciseUseCase;

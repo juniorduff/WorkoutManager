@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Api(tags = "exercise")
+@Api(tags = "Exercice")
 @RequestMapping("/exercice")
 public class CreateExercicesController {
     @Autowired

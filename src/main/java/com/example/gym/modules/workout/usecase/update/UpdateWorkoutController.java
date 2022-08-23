@@ -16,10 +16,9 @@ import java.util.UUID;
 public class UpdateWorkoutController {
     @Autowired
     private UpdateWorkoutUseCaseImpl updateWorkoutUseCase;
-
-
     @PutMapping("/update/{id}")
     public ResponseEntity<WorkoutEntity> handle(@RequestBody WorkoutDto workoutDto, @PathVariable UUID id) {
+        System.out.println(workoutDto);
         return updateWorkoutUseCase.execute(workoutDto, id);
     }
 }

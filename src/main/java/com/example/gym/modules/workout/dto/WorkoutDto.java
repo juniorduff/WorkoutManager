@@ -12,8 +12,8 @@ public class WorkoutDto implements Serializable {
     private final UUID id;
     private final String repetitions;
     private final String rest_time;
-    private final String Variation;
-    private final String Observations;
+    private final String variation;
+    private final String observations;
     private final LocalDateTime created_at;
     private final LocalDateTime updated_at;
     private final UUID coachID;

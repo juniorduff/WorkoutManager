@@ -29,8 +29,10 @@ public class WorkoutEntity {
     private String Variation;
     @Column()
     private String Observations;
-
-
+    @Column(insertable = false, updatable = false)
+    private UUID coach_id;
+    @Column(insertable = false, updatable = false)
+    private UUID student_id;
     @Column(name = "created_at")
     @CreationTimestamp
     private LocalDateTime created_at;
@@ -48,6 +50,6 @@ public class WorkoutEntity {
 
     @JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-    @JoinColumn(name = "student", nullable = false)
+    @JoinColumn(name = "student_id", nullable = false)
     private StudentEntity student;
 }

@@ -26,6 +26,7 @@ public class UpdateExercicesUseCase implements UpdateExercicesUseCaseImpl {
             throw new ResponseStatusException(
                     HttpStatus.NOT_FOUND, "Provide correct Actor Id");
         }
+
         ExerciceEntity newExercice = exercice.get();
         newExercice.setName(exerciceDto.getName());
         newExercice.setDescription(exerciceDto.getDescription());
